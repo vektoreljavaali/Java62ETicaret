@@ -7,37 +7,26 @@
     tools:context=".ui.slideshow.SlideshowFragment">
 
     <EditText
-        android:id="@+id/txtMessages"
-        android:layout_width="391dp"
-        android:layout_height="555dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
         android:id="@+id/txtnickname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Nick Name"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMessages" />
+        app:layout_constraintTop_toBottomOf="@+id/labelnickname" />
 
     <TextView
         android:id="@+id/labelnickname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="36dp"
         android:text="Kullanıcı Adı"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMessages" />
+        app:layout_constraintTop_toBottomOf="@+id/rcwMessageList" />
 
     <EditText
         android:id="@+id/txtmessage"
@@ -63,4 +52,12 @@
         app:layout_constraintStart_toEndOf="@+id/txtmessage"
         app:layout_constraintTop_toBottomOf="@+id/txtnickname"
         app:strokeColor="#03A9F4" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcwMessageList"
+        android:layout_width="412dp"
+        android:layout_height="534dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
