@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1054142525064",
+    "project_id": "java62eticaretandroid",
+    "storage_bucket": "java62eticaretandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054142525064:android:6a77dac93e10ce2b77b93d",
+        "android_client_info": {
+          "package_name": "com.vektorel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054142525064-8tpm1j03i62omh6lkbkrtlcr5ercrdkg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vektorel",
+            "certificate_hash": "5109c82393947cfc4d9db60fd1a06d18efd1c0b9"
+          }
+        },
+        {
+          "client_id": "1054142525064-0pu295nl77qrd7glki8fvqgih0vhhq6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_GhgyIPyAqPjIn9-PcaLEZOccooq0ePs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054142525064-0pu295nl77qrd7glki8fvqgih0vhhq6f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
