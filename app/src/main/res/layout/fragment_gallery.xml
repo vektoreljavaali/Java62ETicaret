@@ -6,17 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".ui.gallery.GalleryFragment">
 
-    <TextView
-        android:id="@+id/text_gallery"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcwNoteList"
+        android:layout_width="412dp"
+        android:layout_height="519dp"
+        android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/notePagetxttitle"
+        android:layout_width="265dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:hint="Konu Başlığı"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/notePagetxtcontent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/notePagetxtcontent"
+        android:layout_width="366dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="İçerik giriniz.."
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/rcwNoteList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnkaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="10dp"
+        android:text="Kaydet"
+        app:layout_constraintBottom_toTopOf="@+id/notePagetxtcontent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/notePagetxttitle" />
 </androidx.constraintlayout.widget.ConstraintLayout>

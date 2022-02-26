@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -15,10 +16,12 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.vektorel.utility.StaticValues;
 
 public class LoginActivity extends AppCompatActivity {
     EditText txtusername,password;
     Button btngiris;
+    TextView txtRegisterButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,12 +29,18 @@ public class LoginActivity extends AppCompatActivity {
         txtusername= findViewById(R.id.txtloginusername);
         password = findViewById(R.id.txtloginpassword);
         btngiris = findViewById(R.id.btngiris);
+        txtRegisterButton = findViewById(R.id.txtRegisterButton);
+        txtRegisterButton.setOnClickListener(x-> RegisterAc());
         btngiris.setOnClickListener(v -> GirisYap());
     }
 
+    private void RegisterAc(){
+        Intent intent = new Intent(this,RegisterActivity.class);
+        startActivity(intent);
+    }
     private void GirisYap() {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://ec2-18-118-103-244.us-east-2.compute.amazonaws.com/restuser/isuser?" +
+        String url = StaticValues.AWSSERVER+ "/restuser/isuser?" +
                 "password=" +password.getText().toString()+
                 "&username="+txtusername.getText().toString();
 

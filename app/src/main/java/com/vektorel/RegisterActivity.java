@@ -20,6 +20,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.vektorel.utility.StaticValues;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -76,7 +77,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void registerUser(){
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://ec2-18-118-103-244.us-east-2.compute.amazonaws.com/restuser/saveuser?" +
+        String url = StaticValues.AWSSERVER+ "/restuser/saveuser?" +
                 "answer=" + answer.getText().toString()+
                 "&password=" + password.getText().toString()+
                 "&question=1" +

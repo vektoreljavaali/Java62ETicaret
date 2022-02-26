@@ -30,8 +30,8 @@
 
     <EditText
         android:id="@+id/txtmessage"
-        android:layout_width="328dp"
-        android:layout_height="53dp"
+        android:layout_width="287dp"
+        android:layout_height="69dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         android:ems="10"
@@ -42,8 +42,8 @@
 
     <Button
         android:id="@+id/btngonder"
-        android:layout_width="53dp"
-        android:layout_height="53dp"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:background="@color/design_default_color_secondary"
@@ -55,8 +55,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcwMessageList"
-        android:layout_width="412dp"
-        android:layout_height="534dp"
+        android:layout_width="407dp"
+        android:layout_height="518dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
