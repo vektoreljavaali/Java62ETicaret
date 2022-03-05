@@ -24,7 +24,7 @@ public class StaticValues {
     public static final String TBL_STATUS = "status";
     public static final String TBL_PRIORITY = "priority";
 
-    public static final String AWSSERVER= "http://ec2-18-216-248-218.us-east-2.compute.amazonaws.com";
+    public static final String AWSSERVER= "http://ec2-18-223-22-64.us-east-2.compute.amazonaws.com";
 
     /**
      * https://newsapi.org/v2/everything?
